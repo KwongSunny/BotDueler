@@ -1,4 +1,6 @@
-package main;
+package duel;
+
+import Main.CharacterB;
 
 public class Duel {
 
@@ -6,6 +8,10 @@ public class Duel {
 
 	private Dueler d1;
 	private Dueler d2;
+	
+	private int dueler1HP = 30;
+	private int dueler2HP = 30;
+	
 	
 	public static void main(String[] args){
 		Duel duel = new Duel();
@@ -15,10 +21,6 @@ public class Duel {
 	public Duel() {
 		d1 = new CharacterA();
 		d2 = new CharacterB();
-	}
-	
-	public void dukeItOut(){
-		
 	}
 	
 	public void dukeItOut(){
@@ -49,5 +51,6 @@ public class Duel {
 			e.printStackTrace();
 		}
 	}
+
 
 }
