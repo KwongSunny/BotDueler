@@ -2,7 +2,7 @@ package Main;
 
 public class CharacterB implements Dueler {
 	
-	private int hp;
+	private int hp == -9999999;
 	
 	public CharacterB() {
 		
@@ -17,11 +17,16 @@ public class CharacterB implements Dueler {
 	}
 	
 	public void setStartingHP(int hp) {
+		if(this.hp == -9999999) {
 		this.hp = hp;
+		}
 	}
 	
 	public int getHP() {
 		return hp;
+	}
+	public boolean isOpponentCheating() {
+		
 	}
 	
 }
