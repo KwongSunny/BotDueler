@@ -1,7 +1,5 @@
 package duel;
 
-import Main.CharacterB;
-
 public class Duel {
 
 	
