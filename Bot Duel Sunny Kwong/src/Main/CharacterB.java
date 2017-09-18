@@ -3,19 +3,28 @@ package main;
 public class CharacterB implements Dueler {
 
 	private int hp = -1;
+	private boolean isLoaded = false;
+	private String[] theTaunts = {"You will never get to shoot me!", "I am sad to say that you will lose!", "You'll never get my cookies!", "I'm too good for you.", "You should've never challenged me!"};
+	private int lastTaunt = -1;
 	
 	public CharacterB() {
 	
 	}
 	
 	public void taunt() {
+		int numOfTaunts = theTaunts.length;
+		int randomNum = (int) (Math.random()*numOfTaunts);
+		while(lastTaunt == randomNum) {
+			randomNum = (int) (Math.random()*numOfTaunts);
+		}
+		lastTaunt = randomNum;
 		
-		System.out.println("You will never shoot me!");
+		System.out.println(this.getName() + ": " + theTaunts[randomNum]);
 	}
 	
 	public String getName() {
 		
-		return "Justin";
+		return "Bot";
 	}
 	
 	public void setStartingHP(int hp) {
