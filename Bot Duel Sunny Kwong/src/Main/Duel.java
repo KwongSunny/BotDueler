@@ -1,8 +1,14 @@
-package duel;
+package main;
+
+import CharacterA;
+import CharacterB;
+import Duel;
+import Dueler;
 
 public class Duel {
 
 	
+
 	public static final int YEAH_RIGHT = 3;//may return to anyone who calls who is not the Duel master. If you return to the duel master, you will die
 	public static final int LOADING = 0;//must load before shooting
 	public static final int SHOOTING = 1;//takes 10 away from opponent
@@ -184,4 +190,3 @@ public class Duel {
 	}
 
 }
-
