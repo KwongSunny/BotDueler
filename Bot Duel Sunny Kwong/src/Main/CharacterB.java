@@ -39,8 +39,14 @@ public class CharacterB implements Dueler {
 		if(caller instanceof CharacterA) {
 			return 3;
 		}
-		else
-			return (Math.round(Math.random()+1));
+		else if()
+			
+	}
+	public void hit(Object caller) {
+		if(called instanceof Duel) {
+			hp = hp - 10;
+		}
+	}
 	}
 	
 }
