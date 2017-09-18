@@ -48,7 +48,25 @@ public class CharacterB implements Dueler {
 		if(caller instanceof CharacterA) {
 			return 3;
 		}
-		else if()
+		else {
+			int randomNum = (int) Math.random()*3;
+			while(randomNum == 0) {
+				if(isLoaded) {
+					randomNum = (int) Math.random()*3;
+				}
+				else {
+					if(randomNum == 1) {
+						isLoaded = false;
+						return randomNum;
+					}
+					else {
+						randomNum = 2;
+						return randomNum;
+					}
+				}
+			}
+			
+		}
 			
 	}
 	public void hit(Object caller) {
